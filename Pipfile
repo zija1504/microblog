@@ -7,6 +7,11 @@ verify_ssl = true
 
 [packages]
 flask = "*"
+flask-wtf = "*"
+wtforms = "*"
+flask-migrate = "*"
+flask-sqlalchemy = "*"
+ipython = "*"
 
 [requires]
 python_version = "3.7"
