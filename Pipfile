@@ -4,8 +4,9 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pep8 = "*"
-pylint = "*"
+flake8 = "*"
+pylama = "*"
+yapf = "*"
 
 [packages]
 flask = "*"
@@ -18,6 +19,9 @@ flask-login = "*"
 jedi = "*"
 autoflake = "*"
 coverage = "*"
+flake8 = "*"
+pytest = "*"
+pytest-cov = "*"
 
 [requires]
 python_version = "3.7"
