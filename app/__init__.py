@@ -6,6 +6,7 @@ from flask_migrate import Migrate
 from flask_login import LoginManager
 from flask_mail import Mail
 from flask_bootstrap import Bootstrap
+from flask_moment import Moment
 from flask import Flask
 from config import Config
 
@@ -17,6 +18,7 @@ db = SQLAlchemy(app)  # pylint: disable=invalid-name
 migrate = Migrate(app, db)  # pylint: disable=invalid-name
 mail = Mail(app)
 bootstrap = Bootstrap(app)
+moment = Moment(app)
 
 
 def debug_part():

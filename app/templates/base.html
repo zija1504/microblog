@@ -1,10 +1,7 @@
 {% extends 'bootstrap/base.html' %}
 {% block title %}
 {% if title %}
-<title>{{ title }} - Microblog</title>
-{% else %}
-<title>Welcome to Microblog</title>
-{% endif %}
+{{ title }} - Microblog{% else %}Welcome to Microblog{% endif %}
 {% endblock %}
 {% block navbar %}
 <nav class="navbar navbar-default">
@@ -48,4 +45,8 @@
   {# application content needs to be provided in the app_content block #}
   {% block app_content %}{% endblock %}
 </div>
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
 {% endblock %}
