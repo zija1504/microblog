@@ -5,6 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
 from flask_mail import Mail
+from flask_bootstrap import Bootstrap
 from flask import Flask
 from config import Config
 
@@ -15,6 +16,7 @@ login.login_view = 'login'
 db = SQLAlchemy(app)  # pylint: disable=invalid-name
 migrate = Migrate(app, db)  # pylint: disable=invalid-name
 mail = Mail(app)
+bootstrap = Bootstrap(app)
 
 
 def debug_part():

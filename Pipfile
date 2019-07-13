@@ -24,6 +24,7 @@ pytest = "*"
 pytest-cov = "*"
 flask-mail = "*"
 pyjwt = "*"
+flask-bootstrap = "*"
 
 [requires]
 python_version = "3.7"
