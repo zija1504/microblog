@@ -4,6 +4,7 @@ from logging.handlers import SMTPHandler, RotatingFileHandler
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
+from flask_mail import Mail
 from flask import Flask
 from config import Config
 
@@ -13,6 +14,7 @@ login = LoginManager(app)  # pylint: disable=invalid-name
 login.login_view = 'login'
 db = SQLAlchemy(app)  # pylint: disable=invalid-name
 migrate = Migrate(app, db)  # pylint: disable=invalid-name
+mail = Mail(app)
 
 
 def debug_part():

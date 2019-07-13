@@ -22,6 +22,8 @@ coverage = "*"
 flake8 = "*"
 pytest = "*"
 pytest-cov = "*"
+flask-mail = "*"
+pyjwt = "*"
 
 [requires]
 python_version = "3.7"
