@@ -1,0 +1,35 @@
+################################################################################
+# This requirements file has been automatically generated from `Pipfile` with
+# `pipenv-to-requirements`
+#
+#
+# This has been done to maintain backward compatibility with tools and services
+# that do not support `Pipfile` yet.
+#
+# Do NOT edit it directly, use `pipenv install [-d]` to modify `Pipfile` and
+# `Pipfile.lock` and then regenerate `requirements*.txt`.
+################################################################################
+
+autoflake
+coverage
+elasticsearch
+flake8
+flask
+flask-babel
+flask-bootstrap
+flask-login
+flask-mail
+flask-migrate
+flask-moment
+flask-sqlalchemy
+flask-wtf
+guess-language-spirit
+ipython
+jedi
+pyjwt
+pytest
+pytest-cov
+python-dotenv
+requests
+uuid
+wtforms

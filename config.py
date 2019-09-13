@@ -1,5 +1,7 @@
 import os
+from dotenv import load_dotenv
 basedir = os.path.dirname(__file__)
+load_dotenv(os.path.join(basedir, '.env'))
 
 
 class Config(object):
@@ -15,4 +17,7 @@ class Config(object):
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['jacek.schefler@gmail.com']
     # pagination configuration
-    POSTS_PER_PAGE = 20
+    POSTS_PER_PAGE = 21
+    LANGUAGES = ['en', 'pl']
+    MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
+    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')

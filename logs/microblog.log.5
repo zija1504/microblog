@@ -1,4 +1,4 @@
-2019-09-12 21:17:37,089 ERROR: Exception on /search [GET] [in /home/zija1504/.local/share/virtualenvs/flask_app-XSaV25xR/lib/python3.7/site-packages/flask/app.py:1891]
+2019-09-12 21:08:49,544 ERROR: Exception on /search [GET] [in /home/zija1504/.local/share/virtualenvs/flask_app-XSaV25xR/lib/python3.7/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/home/zija1504/.local/share/virtualenvs/flask_app-XSaV25xR/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
     (self._dns_host, self.port), self.timeout, **extra_kw)
@@ -37,7 +37,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "/home/zija1504/.local/share/virtualenvs/flask_app-XSaV25xR/lib/python3.7/site-packages/urllib3/connection.py", line 169, in _new_conn
     self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f3009b45b38>: Failed to establish a new connection: [Errno 111] Connection refused
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0e9e67f780>: Failed to establish a new connection: [Errno 111] Connection refused
 
 During handling of the above exception, another exception occurred:
 
@@ -70,7 +70,4 @@ Traceback (most recent call last):
     timeout=timeout,
   File "/home/zija1504/.local/share/virtualenvs/flask_app-XSaV25xR/lib/python3.7/site-packages/elasticsearch/connection/http_urllib3.py", line 245, in perform_request
     raise ConnectionError("N/A", str(e), e)
-elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f3009b45b38>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f3009b45b38>: Failed to establish a new connection: [Errno 111] Connection refused)
-2019-09-13 06:36:22,264 INFO: Microblog startup [in /home/zija1504/my_projects/flask_app/app/__init__.py:80]
-2019-09-13 06:37:18,963 INFO: Microblog startup [in /home/zija1504/my_projects/flask_app/app/__init__.py:80]
-2019-09-13 06:38:20,123 INFO: Microblog startup [in /home/zija1504/my_projects/flask_app/app/__init__.py:80]
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f0e9e67f780>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f0e9e67f780>: Failed to establish a new connection: [Errno 111] Connection refused)

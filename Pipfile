@@ -26,6 +26,12 @@ flask-mail = "*"
 pyjwt = "*"
 flask-bootstrap = "*"
 flask-moment = "*"
+flask-babel = "*"
+guess-language-spirit = "*"
+requests = "*"
+uuid = "*"
+python-dotenv = "*"
+elasticsearch = "*"
 
 [requires]
 python_version = "3.7"
