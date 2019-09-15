@@ -125,7 +125,7 @@ class SearchableMixin(object):
 
 class Post(SearchableMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    body = db.Column(db.String(255))
+    body = db.Column(db.String(64000))
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     language = db.Column(db.String(5))
